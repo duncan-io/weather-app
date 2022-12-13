@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  height: 100vh;
+}
+
+.top{
+    background-color: red;
+    min-height: 50%;
+}
+
+.bottom{
+    background-color: green;
+}
