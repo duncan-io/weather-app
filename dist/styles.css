@@ -7,8 +7,26 @@ body {
 }
 
 .top{
-    background-color: red;
     min-height: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+
+#icon{
+    width: 8rem;
+}
+
+.left{
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: column;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bottom{

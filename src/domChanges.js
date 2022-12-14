@@ -63,8 +63,15 @@ function updateIcon(icon) {
 
 function updateTemps(weatherData) {
   const tempDisplay = document.getElementById('tempDisplay');
-  const f = ((9 / 5) * (weatherData.temp - 273)) + 32;
-  tempDisplay.textContent = f;
+  const realFeelDisplay = document.getElementById('realFeel');
+  const humidityDisplay = document.getElementById('humidity');
+  const f = Math.floor(((9 / 5) * (weatherData.temp - 273)) + 32);
+  const realFeel = Math.floor(((9 / 5) * (weatherData.feels_like - 273)) + 32);
+  const humidity = `${weatherData.humidity}%`;
+
+  tempDisplay.textContent = `${f} degrees`;
+  realFeelDisplay.textContent = `${realFeel} degrees`;
+  humidityDisplay.textContent = humidity;
 }
 function updateDom(weatherData) {
   updateIcon(weatherData.weather[0].icon);

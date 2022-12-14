@@ -24,4 +24,7 @@ async function getWeather(location) {
   return weatherData;
 }
 
+// Get API for 4 day forecast, do forEach for each of the 4 days to return data and
+// create DOM elements to show 4 day forecast
+
 export { whichCity, getWeather };
